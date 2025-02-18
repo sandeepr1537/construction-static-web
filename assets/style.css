@@ -1,0 +1,128 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-section video {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Inquiry Form */
+.inquiry-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.inquiry-form input, 
+.inquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inquiry-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inquiry-form button:hover {
+    background-color: #218838;
+}
+
+/* Chatbot Section */
+.chatbot {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    position: relative;
+}
+
+#chat-window {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    background: white;
+    border-radius: 5px;
+}
+
+#chat-input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-window button {
+    width: 20%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-window button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer (Fixed Issue - Moved it below Chatbot) */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}

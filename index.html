@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Construction Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video controls autoplay muted>
+            <source src="assets/construction-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section class="inquiry-form">
+        <h3>Get in Touch</h3>
+        <p>Fill out the form below and we’ll get back to you shortly.</p>
+
+        <form action="https://formsubmit.co/sandi2537@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Your Location</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot">
+        <h3>Chat with Us</h3>
+        <div id="chat-window">
+            <div id="chat-output"></div>
+            <input type="text" id="chat-input" placeholder="Ask a question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Construction Company. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
